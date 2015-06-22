@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
+/*@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 /*@import url(http://fonts.googleapis.com/css?family=Gorditas:700);*/
 
 /* 
@@ -50,16 +50,57 @@ p {margin:0px 0px;padding:0px 0px;}
 
 
 
+::selection {
+  background: #E03616; /* WebKit/Blink Browsers */
+  color:white;
+}
+::-moz-selection {
+  background: #E03616	; /* Gecko Browsers */
+  color:white;
+}
+
+
+.preamble, .main, .supporting, .participation, .benefits, .requirements, .sidebar, footer {
+
+	
+	 padding: 1em 4em;
+
+
+}
+
+
+  p {
+ 	padding: .5em 0em;
+ 	line-height:1.5em;
+ }
+
+
+
+
+ h3 {
+	color:#111D13;
+	font-size:2em;
+	border-bottom:1px solid #111D13;
+	line-height:2em;
+
+}
+
+
 
 body {
 	margin:0px;
 	padding:0px;
+	background-color:#fdfdfd;
 }
 
 body div {
 	font-family: 'Oxygen', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color:#E03616;
+}
 
 /* 
 ==========================================================================
@@ -82,13 +123,12 @@ h1, h2 {
 header {
 	font-size:auto;
 	background: url(images/lake3.jpg) no-repeat center center;
-	background-color:grey;
+	background-color:grey;	
 	background-blend-mode:lighten;
 	background-size:cover;
-	height:100vh;
+	height:65em;
 	width:100%;
 	text-align:right;
-	/*position:absolute;*/
 	-webkit-transition: all 0.4s ease;
 	 -moz-transition: all 0.4s ease;
 	 -o-transition: all 0.4s ease;
@@ -103,10 +143,10 @@ header h1 {
 	color:#262626;
 	position:absolute;
 	width:100%;
-	top:72vh;
+	top:9em;
 	right:0em;
 	padding-right:1em;
-	font-size:250%;
+	font-size:5em;
 	font-weight:bold;
 	-webkit-transition: all 0.4s ease;
 	 -moz-transition: all 0.4s ease;
@@ -123,15 +163,11 @@ header h2 {
 	  color: #262626;
 	  font-size: 100%;
 	  padding:.2em;
-	  top:87vh;
+	  top: 52em;
 	  right:3em;
 	  width: auto;
 	  margin: 0em;
-	  float:right;
-	  text-align:center;
-	 /* background: rgba(238, 232, 232, .9); whiteish color*/
-	 /*background: rgba(4, 167, 119, .5);*/
-	  -webkit-transition: all 0.4s ease;
+	  	-webkit-transition: all 0.4s ease;
 		 -moz-transition: all 0.4s ease;
 		 -o-transition: all 0.4s ease;
 		 -ms-transition: all 0.4s ease;
@@ -224,7 +260,7 @@ header abbr {
     		width:auto;
     		position: relative;
     		width:8em;
-    	-webkit-transform: rotate(0deg);
+    		-webkit-transform: rotate(0deg);
 			 -moz-transform: rotate(0deg);
 			 -ms-transform: rotate(0deg);
 			 -o-transform: rotate(0deg);
@@ -242,78 +278,76 @@ Summary
 */
 
 
-
-
-.summary {
-	/*padding:2em;*/
-	
-	/*background-color:#0678db; blueish color*/
-	/*background-color:#107e7d; grenish blue*/
-	background-color: #291720;
-	/*background-color: #2ec4b6; light blue*/
-	margin-left:auto;
-	font-weight: normal;
+.intro .summary {
+	background-color: #111D13
 
 }
 
-.summary p {
-	color:white;
+.intro .summary p {
+	font-weight: bold;
+	/*color:#1F452D;*/
+	color:#fdfdfd;
 	padding:0em 1em 0em 1em;
 	line-height:1.5em;
-	font-size:60%;
 	text-align:center;
-	margin-left:auto;
 }
 
-.summary p:first-child {
+.intro .summary p:first-child {
 	width:auto;
-	border-bottom:1px solid #291720;;
 	padding-bottom:.5em;
 	 
 }
 
-.summary p:last-child {
-	font-size:60%;
+.intro .summary p:last-child {
 	padding:.5em 0em 1em 0em;
+	border-bottom:1px solid #9A8BB0;
 }
 
 .intro .summary a {
-  color: #291720;
-  text-decoration: none;
+  color: #fdfdfd;
+
   border-bottom: 1px solid #291720;
 }
 .intro .summary a:hover {
+  text-decoration: none;
   color: rgba(247,92,3,.8);
   border-bottom: 1px solid rgba(247,92,3,.8);
 }
 
 
+#zen-preamble {
+	/*color:red;
+	float:left;
+	width:40%;
+	border:1px solid red;*/
+	
+}
 
-.preamble, .main{
-	/* background: rgba(238, 232, 232, 1);*/
-	 background-color: white;
-	 color:#291720;
-	 border:1px solid black;
-	 text-align:left;
-	 font-size:50%;
-	 padding: 1em 4em;
+#zen-preamble p
+{
 
 }
- .preamble p {
- 	padding: .5em 0em;
- 	line-height:1.4em;
- 	width:50%;
- }
 
+.explaination {
 
+}
 
+#zen-supporting {
+	clear:both;
+	
 
-
-
-
-
-
+}
 
 .main {
- 
+
 }
+
+.participation {
+
+}
+
+.benefits {
+
+}
+
+
