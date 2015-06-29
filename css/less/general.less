@@ -1,0 +1,70 @@
+/*
+===========================================
+General Styles For Entire Page
+============================================
+*/
+
+html {
+	padding-bottom:2em;
+}
+
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color:#fdfdfd;
+}
+
+body div {
+	font-family: 'Oxygen', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:#E03616;
+}
+  p {
+ 	padding: .5em 0em;
+ 	line-height:1.5em;
+ }
+
+h3 {
+	color:#111D13;
+	font-size:2em;
+	border-bottom:1px solid #111D13;
+	line-height:2em;
+}
+
+
+::selection {
+  background: #E03616; 
+  color:white;
+}
+::-moz-selection {
+  background: #E03616;
+  color:white;
+}
+.main, .supporting, .participation, .benefits, .requirements, .sidebar, footer {
+		padding:1em 4em;
+	}
+
+
+
+/*Change the padding when the window gets small (small width)*/
+@media (max-width: 900px) {
+	.main, .supporting, .participation, .benefits, .requirements, .sidebar, footer {
+		padding:.5em 4em
+	}
+  }
+
+@media (max-width: 690px) {
+	 .main, .supporting, .participation, .benefits, .requirements, .sidebar, footer {
+		padding:.5em 1em;
+	}
+  }
+
+
+
+
+
+
